@@ -34,11 +34,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mFf-Ai-0L5">
+                                <rect key="frame" x="137.5" y="253" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="enD-em-87Q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxy-Zj-Tcq">
+                                <rect key="frame" x="137.5" y="318" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FUT-6o-TFQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mFf-Ai-0L5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1AU-AE-Tte"/>
+                            <constraint firstItem="oxy-Zj-Tcq" firstAttribute="top" secondItem="mFf-Ai-0L5" secondAttribute="bottom" constant="35" id="KwL-OE-jkl"/>
+                            <constraint firstItem="mFf-Ai-0L5" firstAttribute="top" secondItem="KKN-6o-sYh" secondAttribute="bottom" constant="32" id="MSS-d0-GwM"/>
                             <constraint firstItem="GKH-Yi-rVl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MeY-iE-OFL"/>
                             <constraint firstItem="KKN-6o-sYh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S6n-lX-qZw"/>
+                            <constraint firstItem="oxy-Zj-Tcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VzU-lf-Sjp"/>
                             <constraint firstItem="GKH-Yi-rVl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WBz-CT-Tlc"/>
                             <constraint firstItem="KKN-6o-sYh" firstAttribute="top" secondItem="GKH-Yi-rVl" secondAttribute="bottom" constant="100" id="XKY-U8-yCG"/>
                             <constraint firstItem="GKH-Yi-rVl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="fkX-4F-SSz"/>
@@ -46,6 +68,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="mFf-Ai-0L5" id="pWZ-IX-OJe"/>
+                        <outlet property="text2" destination="oxy-Zj-Tcq" id="4Gp-DC-am3"/>
                         <outlet property="theLabel" destination="GKH-Yi-rVl" id="P78-cj-nCx"/>
                     </connections>
                 </viewController>
